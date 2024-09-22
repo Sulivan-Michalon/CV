@@ -1,9 +1,10 @@
 header {
 	width: 100%;
+	position: relative;
 
 	.top-header {
 		height: 226px;
-		background: #272626 url(/CV/media/img/motif.png) left center / auto 100%;
+		background: #272626 url(/media/img/motif.png) left center / auto 100%;
 		border-bottom: 8px solid black;
 	}
 
@@ -21,11 +22,17 @@ header {
 			font-size: 18px;
 		}
 
+		.photo {
+			width: 100px;
+			border-radius: 100%;
+			border: 2px solid black;
+		}
+
 		.redirect {
 			display: flex;
 			justify-content: center;
 			grid-gap: 10px;
-      margin-top: 10px;
+			margin-top: 10px;
 
 			& > a {
 				min-width: 34px;
@@ -36,14 +43,21 @@ header {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-        border: none;
-        cursor: pointer;
+				border: none;
+				cursor: pointer;
 
 				img {
 					width: 20px;
 					height: 20px;
 				}
 			}
+		}
+
+		.discordProfil {
+			width: 150px;
+			position: absolute;
+			bottom: 55px;
+			right: 15px;
 		}
 	}
 
